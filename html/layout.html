@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <Style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        .comtainer {
+            height: 100vh;
+        }
+        
+        .box {
+            border: 4px solid white;
+            margin: 10px;
+        }
+        
+        #box-1 {
+            height: 20%;
+            background-color: rgb(151, 151, 187);
+        }
+        
+        #box-2 {
+            height: 60%;
+        }
+        
+        #box-3 {
+            background-color: rgb(151, 151, 187);
+            height: 20%;
+        }
+        
+        #box-2 {
+            display: flex;
+        }
+        
+        #inner-1 {
+            background-color: rgb(82, 174, 150);
+            width: 30%;
+        }
+        
+        #inner-2 {
+            width: 70%;
+        }
+        
+        .inner-inner {
+            height: 50%;
+            height: 50%;
+            background-color: rgb(13, 13, 151);
+            border: 4px solid white;
+            display: flex;
+        }
+        
+        .inner {
+            height: 100%;
+            width: 50%;
+            background-color: rgb(89, 89, 162);
+            border: 4px solid white;
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="comtainer">
+        <div class="box" id="box-1"></div>
+        <div class="box" id="box-2">
+            <div class="box-inner" id="inner-1"></div>
+            <div class="box-inner" id="inner-2">
+                <div class="inner-inner"></div>
+                <div class="inner-inner">
+                    <div class="inner"></div>
+                    <div class="inner"></div>
+                </div>
+            </div>
+        </div>
+        <div class="box" id="box-3"></div>
+    </div>
+</body>
+
+</html>
